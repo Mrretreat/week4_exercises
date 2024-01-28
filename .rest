@@ -1,0 +1,26 @@
+# GET all todos
+GET http://localhost:5000/api/todos
+
+# GET a specific todo by ID
+GET http://localhost:5000/api/todos/1
+
+# POST a new todo
+POST http://localhost:5000/api/todos
+Content-Type: application/json
+
+{
+    "name": "Learn React",
+    "done": false
+}
+
+# PUT update a todo by ID
+PUT http://localhost:5000/api/todos/1
+Content-Type: application/json
+
+{
+    "name": "Learn React",
+    "done": true
+}
+
+# DELETE a todo by ID
+DELETE http://localhost:5000/api/todos/1
